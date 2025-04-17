@@ -3,44 +3,44 @@ import config
 
 pygame.mixer.init()
 
-white_pawn = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\white-pawn.png")
+white_pawn = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_pawn = pygame.transform.smoothscale(white_pawn,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-black_pawn = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\black-pawn.png")
+black_pawn = pygame.image.load("PATH_TO_CHESS_PIECES")
 black_pawn = pygame.transform.smoothscale(black_pawn,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-white_rook = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\white-rook.png")
+white_rook = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_rook = pygame.transform.smoothscale(white_rook,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-black_rook = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\black-rook.png")
+black_rook = pygame.image.load("PATH_TO_CHESS_PIECES")
 black_rook = pygame.transform.smoothscale(black_rook,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-white_bishop = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\white-bishop.png")
+white_bishop = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_bishop = pygame.transform.smoothscale(white_bishop,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-black_bishop = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\black-bishop.png")
+black_bishop = pygame.image.load("PATH_TO_CHESS_PIECES")
 black_bishop = pygame.transform.smoothscale(black_bishop,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-white_king = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\white-king.png")
+white_king = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_king = pygame.transform.smoothscale(white_king,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-black_king = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\black-king.png")
+black_king = pygame.image.load("PATH_TO_CHESS_PIECES")
 black_king = pygame.transform.smoothscale(black_king,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-white_queen = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\white-queen.png")
+white_queen = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_queen = pygame.transform.smoothscale(white_queen,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-black_queen = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\black-queen.png")
+black_queen = pygame.image.load("PATH_TO_CHESS_PIECES")
 black_queen = pygame.transform.smoothscale(black_queen,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-white_knight = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\white-knight.png")
+white_knight = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_knight = pygame.transform.smoothscale(white_knight,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-black_knight = pygame.image.load("C:\\Users\\user\\Desktop\\chess pieces\\black-knight.png")
+black_knight = pygame.image.load("PATH_TO_CHESS_PIECES")
 black_knight = pygame.transform.smoothscale(black_knight,(config.screen_size[1]/8,config.screen_size[1]/8))
 
-move_sound = pygame.mixer.Sound("C:\\Users\\user\\Desktop\\chess pieces\\move-self.mp3")
-capture_sound = pygame.mixer.Sound("C:\\Users\\user\\Desktop\\chess pieces\\capture.mp3")
+move_sound = pygame.mixer.Sound("PATH_TO_MOVE_AUDIO")
+capture_sound = pygame.mixer.Sound("PATH_TO_CAPTURE_AUDIO")
 
 def background(screen):
     for i in range(8):

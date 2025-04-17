@@ -7,5 +7,6 @@ Note: There are still a lot of changes to be made, the current version is pretty
 Future changes:<br>
 -fix and add the check function<br>
 -add clocks<br>
+-encode the pieces in the scripts<br>
 -optimize a bit<br>
 -add bot using minimax and alpha beta pruning<br>

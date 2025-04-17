@@ -3,6 +3,7 @@ import config
 
 pygame.mixer.init()
 
+#ADD THE LOCATIONS TO THE PIECES HERE---------------------------------------------------------------------
 white_pawn = pygame.image.load("PATH_TO_CHESS_PIECES")
 white_pawn = pygame.transform.smoothscale(white_pawn,(config.screen_size[1]/8,config.screen_size[1]/8))
 
@@ -41,6 +42,7 @@ black_knight = pygame.transform.smoothscale(black_knight,(config.screen_size[1]/
 
 move_sound = pygame.mixer.Sound("PATH_TO_MOVE_AUDIO")
 capture_sound = pygame.mixer.Sound("PATH_TO_CAPTURE_AUDIO")
+#-------------------------------------------------------------------------------------------------------------
 
 def background(screen):
     for i in range(8):
@@ -57,22 +59,6 @@ def background(screen):
 
 pieces_cords = [[8,10, 9, 12, 11, 9, 10, 8], [7, 7, 7, 7,7 , 7, 7, 7], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0,0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1], [2, 4, 3, 6, 5, 3, 4, 2]]
 
-"""
-nothing = 0
-white pawn = 1
-white rook = 2
-white bishop = 3
-white knight = 4
-white king = 5
-white queen = 6
-
-black pawn = 7
-black rook = 8
-black bishop = 9
-black knight = 10
-black king = 11
-black queen = 12
-"""
 piece_dict = {
     1 : white_pawn,
     2 : white_rook,
@@ -91,14 +77,6 @@ change_bg = False
 whites = [1,2,3,4,5,6]
 blacks = [7,8,9,10,11,12]
 turn = "White"
-#config.x_border + config.screen_size[1]*i/8, config.screen_size[1]*j/8, config.screen_size[1]/8,config.screen_size[1]/8]
-
-
-
-
-
-
-
 
 
 captures_white = []
@@ -503,33 +481,6 @@ class pieces:
         elif piece == 7 and turn == "Black":
             return pieces.black_pawn(cords)
         return 0
-
-    # def possible_next_moves_check(piece, cords):
-    #     if piece == 4 and turn == "White":
-    #         return pieces.horse(cords)
-    #     elif piece == 10 and turn == "Black":
-    #         return pieces.horse(cords)
-    #     elif piece == 3 and turn == "White":
-    #         return pieces.bishop(cords)
-    #     elif piece == 9 and turn == "Black":
-    #         return pieces.bishop(cords)
-    #     elif piece == 6:
-    #         return pieces.queen(cords)
-    #     elif piece == 12 and turn == "Black":
-    #         return pieces.queen(cords)
-    #     elif piece == 2 and turn == "White":
-    #         return pieces.rook(cords)
-    #     elif piece == 8 and turn == "Black":
-    #         return pieces.rook(cords)
-    #     elif piece == 5 and turn == "White":
-    #         return pieces.king(cords)
-    #     elif piece == 11 and turn == "Black":
-    #         return pieces.king(cords)
-    #     elif piece == 1 and turn == "White":
-    #         return pieces.white_pawn(cords)
-    #     elif piece == 7 and turn == "Black":
-    #         return pieces.black_pawn(cords)
-    #     return 0
 
     #takes coordinates where we clicked and gives us the square
     def mouse_square(mouse):
